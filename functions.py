@@ -21,17 +21,17 @@ def consoletext() -> None:
         print("2. Remove Contacts")
         print("3. List Contacts")
         print("4. Exit")
-        action = int(input("Choose an option: "))
-        if action == 1:
+        action = input("Choose an option: ")
+        if action == "1":
             name = input("What is the name of the contact? -> ")
             number = input("What is the number of the contact? -> ")
             addcontacts(name, number)
-        elif action == 2:
+        elif action == "2":
             name = input("Which contact would you like to remove? -> ")
             removecontacts(name)
-        elif action == 3:
+        elif action == "3":
             showcontacts()
-        elif action == 4:
+        elif action == "4":
             print("Exiting...")
             exit()
         else:
